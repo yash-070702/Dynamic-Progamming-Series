@@ -4,7 +4,7 @@ class Solution {
 public:
     int solve(vector<int>& nums, vector<int>& dp, int index, int start) {
         if (index < start) return 0; 
-        if (index == start) return nums[start]; 
+        if (index == start) return nums[start];
 
         if (dp[index] != -1) return dp[index]; 
 
