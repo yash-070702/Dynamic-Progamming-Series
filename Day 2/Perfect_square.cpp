@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
   public:
   
-    // USING MEMORIZATI0N  
+    // <---------------USING MEMORIZATI0N------------------->
   
     // int solve(int n ,vector<int>&dp){
     //     if(n==0 || n==1 || n==2)
@@ -29,7 +29,7 @@ class Solution {
         
     // }
     
-    // USING TABULATION 
+    //<--------------- USING TABULATION--------------> 
     int MinSquares(int n){
         vector<int>dp(n+1,INT_MAX);
         dp[0]=0;
