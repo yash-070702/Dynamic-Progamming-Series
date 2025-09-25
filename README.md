@@ -235,6 +235,148 @@ Files:
 - `pizzaWith3nSlices.cpp` — Max sum selecting n non-adjacent slices from circular pizza (DP on circle).
 - `reducingDishes.cpp` — Max satisfaction problem with order multipliers (DP / greedy variants).
 
+# Day 9 — Dynamic Programming Problems
+
+Files:
+- `deleteOprOnStrings.cpp` — Minimum deletions to make two strings equal (edit distance variant).
+- `guessNumberHigherOrLower_II.cpp` — Min cost to guarantee win (interval DP).
+- `minimumSwaps.cpp` — Minimum swaps to sort / arrange (varies by problem statement).
+- `noOfDiceRollsWithTargetSum.cpp` — Count number of dice rolls to reach target (DP by sum).
+- `partitionEqualSubsetSum.cpp` — Partition array into two subsets with equal sum (subset-sum DP).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 partitionEqualSubsetSum.cpp -o part
+./part
+
+DP Tips (Day 9)
+
+- String operations often reduce to edit-distance style DP.
+- Dice rolls problem is classic: dp[rolls][sum].
+- Partition subset sum → classic knapsack boolean DP.
+
+
+# Day 10 — Dynamic Programming Problems
+
+Files:
+- `BuyAndSellWithCooldown.cpp` — Max profit with cooldown days.
+- `MaxProfitInAJobScheduling.cpp` — Weighted interval scheduling (DP + binary search).
+- `minDiffOfAJob.cpp` — Partition jobs to minimize difference (subset sum variant).
+- `minimumCostToCutStick.cpp` — Min cost to cut stick (interval DP).
+- `scrambleString.cpp` — Check if one string is scramble of another (recursive DP with memoization).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 MaxProfitInAJobScheduling.cpp -o jobs
+./jobs
+
+DP Tips (Day 10)
+
+- Cooldown stock problems require 3 states (buy, sell, rest).
+- Interval DP (cut stick / scramble) often O(n^3).
+
+
+# Day 11 — Dynamic Programming Problems
+
+Files:
+- `eggDropping.cpp` — Min attempts to find critical floor (classic DP / binary search).
+- `geeksTraining.cpp` — Max points over days with no repeat activity.
+- `MatrixChainMultiplication.cpp` — Optimal matrix multiplication order (interval DP).
+- `palindromicPartition.cpp` — Min cuts for palindrome partitioning.
+- `wordBreak.cpp` — Word break problem (DP with dictionary lookup).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 eggDropping.cpp -o eggs
+./eggs
+
+DP Tips (Day 11)
+
+- Egg dropping optimized with binary search over partitions.
+- Matrix chain & palindrome partition are interval DP with cuts.
+
+
+# Day 12 — Dynamic Programming Problems
+
+Files:
+- `minimumFallingPathSum_II.cpp` — Min falling path with restrictions (O(n^3) DP).
+- `minimumFallingPathSum.cpp` — Simple falling path sum.
+- `minimumPathSum.cpp` — Min path sum in grid.
+- `triangle.cpp` — Min path in triangle grid.
+- `uniquePath_II.cpp` — Unique paths with obstacles.
+- `uniquePaths.cpp` — Classic grid path counting.
+
+## How to run
+```bash
+g++ -std=c++17 -O2 minimumPathSum.cpp -o mps
+./mps
+
+DP Tips (Day 12)
+
+- Grid path problems often use dp[i][j] = cost/ways up to cell.
+- Space optimization possible to O(n).
+
+
+# Day 13 — Dynamic Programming Problems
+
+Files:
+- `CherryPickup_II.cpp` — Collect max cherries with 2 robots.
+- `CherryPickup.cpp` — Collect max cherries (grid traversal).
+- `largestDivisibleSubset.cpp` — Largest subset where each divides the other (LIS variant).
+- `longestBitonicSubsequence.cpp` — LIS + LDS combination.
+- `longestChainString.cpp` — Longest chain of strings (DP on sorted words).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 CherryPickup.cpp -o cherry
+./cherry
+
+DP Tips (Day 13)
+
+- Cherry pickup is 3D DP on grid + positions.
+- Bitonic subsequence = LIS up + LIS down.
+
+# Day 14 — Dynamic Programming Problems
+
+Files:
+- `DominoTrominoTilling.cpp` — Ways to tile with domino & tromino.
+- `FlipToMonotoneIncrease.cpp` — Min flips to make string monotone increasing.
+- `Jump_Game.cpp` — Jump game with DP/greedy.
+- `Restore_the_Array.cpp` — Restore array with DP on valid partitions.
+- `Ugly_Number_2.cpp` — Find nth ugly number (DP with pointers).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 Jump_Game.cpp -o jump
+./jump
+
+DP Tips (Day 14)
+
+- Tiling problems → recurrence relations.
+- Monotone string → prefix DP.
+- Ugly numbers → DP with multiple indices.
+
+# Day 15 — Dynamic Programming Problems
+
+Files:
+- `Count_Ways_to_build_good_strings.cpp` — Count good strings with restrictions.
+- `Maximum_Approach_After_N_Operations.cpp` — Maximize array/number after N operations (DP/greedy).
+- `Stone_Game_II.cpp` — Stone game variant (minimax + DP).
+- `Stone_Game_III.cpp` — Another stone game variant (prefix sums + DP).
+- `Stone_Game.cpp` — Classic stone game.
+- `uncrossed_lines.cpp` — Max uncrossed lines (LCS variant).
+
+## How to run
+```bash
+g++ -std=c++17 -O2 Stone_Game.cpp -o stone
+./stone
+
+DP Tips (Day 15)
+
+- Stone games → interval DP / prefix sums.
+- Uncrossed lines reduces to LCS.
+
+
 ## How to run
 ```bash
 g++ -std=c++17 -O2 FrogJump.cpp -o frog
